@@ -16,11 +16,14 @@ length=$(($namelength +1)) #adds 1 to length of name
 a='10' #first byte of gtp
 b="$(printf '%02x\n' $length)" #file name length (+1) in hex. Second byte (b) is number of letters in name +1
 sed 's/^.....//' $dump > $temp #removes addresses from MAME generated dump because they mess with xxd
+cassettelength=`cat $temp | tr -d '\040\011\012\015'` #remove spaces to calculate length
+cassettelength2=${#cassettelength}
+cassettelength3=`expr $cassettelength2 / 2 + 7`
+cassettelength4=`printf "%04X" "$((10#$cassettelength3))"`
 tempextract=`cat $temp`
-echo "${mem}"
 c='000000' #follows file name length and preceeds file name
 d='0000'
-f='FC01' #need to grab automatically, length of program?
+f=`echo $cassettelength4 |  tac -rs .. | echo "$(tr -d '\n')"` #need to grab automatically, length of program? Program length + 7 bytes, 4 bytes total from right to left
 e='0000'
 g='A5362C' #follows file name and preceeds code. Not sure yet how you calculate.
 h="${tempextract:8:5}" #need to grab automatically
@@ -31,24 +34,24 @@ cat $temp_chksum | tr -d '\040\011\012\015' > $temp_chksum2 #removes spaces from
 #cat $temp_chksum2
 sed -e "s/.\{2\}/&\n/g" $temp_chksum2 > $temp_chksum #newlines to chksum
 sed -i -e 's/^/0x/' $temp_chksum # adding 0x to hex in prep for conversion
-cat $temp_chksum
+#cat $temp_chksum
 ./decimal.sh $temp_chksum > $temp_chksum2 #decimal conversion
-cat $temp_chksum2
+#cat $temp_chksum2
 sum=`awk '{ sum += $1 } END { print sum }' $temp_chksum2 ` #summation
-echo $sum
+#echo $sum
 #expr $sum % 256 > $temp_chksum
-mod=`expr $sum % 256`
-echo $mod
-binary=`echo ${D2B[$mod]}`
-echo $binary
-binary2=`python 2s.py $binary`
-hexchksm=`printf '%x\n' "$((2#$binary2))"`
-i=`expr $hexchksm - 1`
-echo $i
+mod=`expr $sum % 256` #calculate modulo 256
+#echo $mod
+binary=`echo ${D2B[$mod]}` #convert to binary
+#echo $binary
+binary2=`python 2s.py $binary` #get 2s complement
+hexchksm=`printf '%x\n' "$((2#$binary2))"` #convert back to hex
+i=`expr $hexchksm - 1` # subtract 1 from hex
+#echo $i
 gtpaddon="${a}${b}${c}${hexname}${d}${f}${e}${g}${h}`cat ${temp}`${i}${j}" #combines hex to add before dump for gtp compatibility
 echo $gtpaddon > $output
 #echo "$gtpaddon $(cat $output)" > $output
-cat $output
+#cat $output
 xxd -r -p $output $gtp #exports dump to gtp file
 
 
