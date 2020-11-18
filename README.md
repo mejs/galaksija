@@ -82,3 +82,9 @@ wav generated with gtp2wav tool
 ** Load the gtp file into MAME
 ** Run OLD? command (the questionmark will check it against the program loaded in RAM)
 ** If gtp file is good you'll get a READY prompt
+
+###### GTP format
+
+I haven't been able to find gtp's documentation. dump2gtp tool is based on reverse engineering gtp files available online and generated with gtp2wav tool. Below is my preliminary analysis of the format. There may be errors in here:
+
+![gtp format](/imgs/gtp_format.png)
