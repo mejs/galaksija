@@ -18,7 +18,7 @@ While the character ROM hasn't changed after release, different computer version
 - Mipro
 - Zavod za udžbenike i nastavna sredstva
 
-Elektronika inženjering and Mipro featured their respective logos at the Galaksija READY prompt. I haven't been able to confirm what determined which character ROMs had which logo. Most character ROMs available online feature the recognizable Elektronika inženjering logo, but I generated one with Mipro's logo as well for historical reasons.
+Elektronika inženjering and Mipro featured their respective logos at the Galaksija READY prompt. I haven't been able to confirm what determined which character ROMs got which logo. Most character ROMs available online feature the recognizable Elektronika inženjering logo, but I generated one with Mipro's logo as well for historical reasons.
 
 ![Mipro](/imgs/mipro.png)
 
@@ -36,7 +36,7 @@ Elektronika inženjering logo
 ### Tools
 ##### [dump2gtp](https://github.com/mejs/galaksija/tree/master/tools/dump2gtp)
 
-There are multiple Galaksija emulators, but in 2020 Galaksija is most easily emulated in MAME. MAME includes Galaksija specific virtual tape format gtp. A number of historical programs are available in this format, and @avian2 developed a [series of tools](https://www.tablix.org/~avian/blog/articles/galaksija-tools/) to work with the format, including gtp2wav to export gtp files to wav for use with real Galaksijas, and bin2gtp to convert Z80 assembly bins to gtp. However, I've been unable to find a tool to export Galaksija recordings to gtp, either historical or newly written programs. dump2gtp is an improvised tool that works in conjuction with MAME to get around this limitation. This tool is in a very early stage. I would like to replace it with a proper wav2gtp tool that wouldn't require dumping the program through MAME before converting.
+There are multiple Galaksija emulators, but in 2020 Galaksija is most easily emulated in MAME. MAME includes Galaksija specific virtual tape format gtp. A number of historical programs are available in this format, and Tomaž Šolc ([@avian2](https://github.com/avian2) developed a [series of development tools](https://www.tablix.org/~avian/blog/articles/galaksija-tools/) to work with the format, including gtp2wav to export gtp files to wav for use with real Galaksijas, and bin2gtp to convert Z80 assembly bins to gtp. However, I've been unable to find a tool to export Galaksija recordings to gtp, either historical or newly written programs. dump2gtp is an improvised tool that works in conjuction with MAME to get around this limitation. This tool is in a very early stage. I would like to replace it with a proper wav2gtp tool that wouldn't require dumping the program through MAME before converting.
 
 The tool is written in bash. Along with regular UNIX tools, it requires xxd to convert hex into a bin, and python to generate 2s complement, needed to generate cheksum. It currently consists of 3 files:
 
