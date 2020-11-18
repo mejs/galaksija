@@ -45,10 +45,14 @@ mod=`expr $sum % 256` #calculate modulo 256
 binary=`echo ${D2B[$mod]}` #convert to binary
 #echo $binary
 binary2=`python 2s.py $binary` #get 2s complement
-hexchksm=`printf '%02X' "$((2#$binary2))"` #convert back to hex
-hexchksm2=`expr $hexchksm - 1` # subtract 1 from hex
-i=`printf '%02X' $hexchksm2`
-echo $i
+#hexchksm=`printf '%02X' "$((2#$binary2))"` #convert back to hex
+#hexchksm2=`expr $hexchksm - 1` # subtract 1 from hex
+hexchksm=`expr $binary2 - 1` # subtract 1 from binary
+hexchksm2=`printf '%02X' "$((2#$hexchksm))"` #convert back to hex
+#echo $hexchksm2
+#i=`printf '%02X' $hexchksm2`
+i=$hexchksm2
+#echo $i
 gtpaddon="${a}${b}${c}${hexname}${d}${f}${e}${g}${h}`cat ${temp}`${i}${j}" #combines hex to add before dump for gtp compatibility
 echo $gtpaddon | tr -d '\040\011\012\015' > $output
 #echo "$gtpaddon $(cat $output)" > $output
