@@ -50,11 +50,11 @@ The tool is written in bash. Along with regular UNIX tools, it requires xxd to c
 ** It is exported as an unsigned PCM wav file (this is important as MAME has issues with signed PCM wavs)
 ** I have had success recording very low audio with my mic set to 19%. This is what the soundwave looked like compared to gtp2wav generated wav. Anything louder than this wouldn't load into MAME. It's also important to export as mono since Galaksija uses one channel for loading and the other for saving.
 
-![wav1](wav1.png)
+![wav1](/imgs/wav1.png)
 
 wav recorded from my Galaksija in Audacity
 
-![wav2](wav2.png)
+![wav2](/imgs/wav2.png)
 
 wav generated with gtp2wav tool
 
