@@ -88,3 +88,25 @@ wav generated with gtp2wav tool
 I haven't been able to find gtp's documentation. dump2gtp tool is based on reverse engineering gtp files available online and generated with gtp2wav tool. Below is my preliminary analysis of the format. There may be errors in here:
 
 ![gtp format](/imgs/gtp_format.png)
+
+
+### Case
+
+![case photo](/case/case_photo1.jpg)
+
+The original Galaksija instructions in Računari u vašoj kući suggests using plain PCB material (fiberglass) to make the case. I designed a case in SketchUp that follows this design closely, but which is ready to be 3D printed. A few notes
+
+![case 2](/case/case2.png)
+
+* the design assumes a plexiglass base with standoff screws (4)
+* 2 LED holes
+* 2 reset button holes (1 NMI, 1 full reset)
+* 1 power jack
+* 1 power switch
+* 1 3.5mm jack
+* 1 HDMI port for use with integrated RCA to HDMI adapter
+
+I strongly suggest you measure your Galaksija, especially the keyboard, and make adjustments for I/O ports. Overall dimensions should be compatible with all original PCB designs.
+
+* [SketchUp file](https://github.com/mejs/galaksija/blob/master/case/Galaksija%20case.stl)
+* [Additional photos](https://github.com/mejs/galaksija/tree/master/case)
