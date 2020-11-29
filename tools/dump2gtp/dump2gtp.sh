@@ -47,8 +47,12 @@ binary=`echo ${D2B[$mod]}` #convert to binary
 binary2=`python 2s.py $binary` #get 2s complement
 #hexchksm=`printf '%02X' "$((2#$binary2))"` #convert back to hex
 #hexchksm2=`expr $hexchksm - 1` # subtract 1 from hex
-hexchksm=`expr $binary2 - 1` # subtract 1 from binary
-hexchksm2=`printf '%02X' "$((2#$hexchksm))"` #convert back to hex
+#hexchksm=`expr $binary2 - 1` # subtract 1 from binary
+decimal1=`echo "$((2#$binary2))"`
+decimal2=`expr $decimal1 - 1` #subtract 1 from decimal
+echo $decimal2
+hexchksm2=`printf "%x\n" $decimal2`
+#hexchksm2=`printf '%02X' "$((2#$hexchksm))"` #convert back to hex
 #echo $hexchksm2
 #i=`printf '%02X' $hexchksm2`
 i=$hexchksm2
