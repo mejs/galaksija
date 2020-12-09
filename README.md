@@ -10,8 +10,8 @@ For more about my Galaksija build project, check my ongoing [Twitter thread](htt
 
 ### Roms
 There were 3 roms for the original Galaksija
-- 2 2732 4KB EPROMs: ROM A (main functins and BASIC) and ROM B (advanced math functions, released in 1984)
-- 1 2716 2KB EPROM: character generator rom
+- 2 x 2732 4KB EPROMs: ROM A (main functins and BASIC) and ROM B (advanced math functions, released in 1984)
+- 1 x 2716 2KB EPROM: character generator rom
 
 While the character ROM hasn't changed after release, different computer versions came with different logos. A number of companies were involved in production and distribution of Galaksija parts, but three companies actively participated in Galaksija branding:
 - Elektronika inženjering
