@@ -8,11 +8,36 @@ Galaksija is a Z80A based microcomputer designed in 1983 in Belgrade (Yugoslavia
 
 For more about my Galaksija build project, check my ongoing [Twitter thread](https://twitter.com/mejs/status/1310633747461668869).
 
-### Roms
+### [Roms](https://github.com/mejs/galaksija/tree/master/roms)
 There were 3 roms for the original Galaksija
 - 2 x 2732 4KB EPROMs: ROM A (main functins and BASIC) and ROM B (advanced math functions, released in 1984)
 - 1 x 2716 2KB EPROM: character generator rom
 
+Later on at least two additional roms were released, mainly for use with Galaksija Plus, but still compatible with the original Galaksija: ROM C and ROM D. I haven't been able to find copies of these two roms yet, but I did obtain some documentation, which is included in this repo.
+
+#### ROM A
+Includes:
+- a copy of the first two pages of the original ROM listing (published as GALA005052). I'm still looking for a complete scan.
+- the original Galaksija guide published in Računari u vašoj kući Issue 1, covering ROM A functions. An extra copy is available for printing.
+- ROM A version 28 - original ROM A before ROM B was available
+- ROM A version 29 - updated ROM A with automatic loading of ROM B
+
+#### ROM B
+Includes:
+- a copy of the original ROM B listing (complete)
+- the original ROM B guide published in Računari u vašoj kući Issue 3. An exra copy is available for printing.
+- original ROM B
+- ROM B with reverted screen position fix. Original ROM B moved the image position to the right. This worked well with TVs, but doesn't fit well on my monitor.
+
+#### ROM C
+Includes:
+- a scan of the article about ROM C in Svet kompjutera
+
+#### ROM D
+Includes
+- a scan of the article about ROM D in Svet kompjutera
+
+#### Character generator ROM
 While the character ROM hasn't changed after release, different computer versions came with different logos. A number of companies were involved in production and distribution of Galaksija parts, but three companies actively participated in Galaksija branding:
 - Elektronika inženjering
 - Mipro
