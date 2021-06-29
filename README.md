@@ -94,7 +94,7 @@ wav generated with gtp2wav tool
 
 * Program is dumped out of MAME into a txt file
  * First we need to calculate the size of program to dump. Original Galaksija came with 2KB, 4KB or 6KB of memory. MAME emulator runs with 6KB, 5062 of which is available after start
- * Run WRITE MEM. This will give us the amount of available memory after loading the program
+ * Run PRINT MEM. This will give us the amount of available memory after loading the program
  * Subtract remaining memory from 5062. E.g. 5062-3766=1296
  * Add 4 bytes to 1296. Galaksija tapes include some extra memory spaces, so we want to dump 4 bytes ahead of the program start (BASIC start pointer and BASIC end pointer). E.g. 1296+4=1301
  * Convert program size + 4 bytes to HEX. E.g. 1301=515
