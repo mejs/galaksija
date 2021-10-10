@@ -12,6 +12,9 @@ For more about my Galaksija build project, check my ongoing [Twitter thread](htt
 - Gerbers file of the original single layer board was available at spetsialist-mx.ru. Unfortunately, this website is no longer active, but you can download a rar of the gerbers files from the [Internet Archive](https://web.archive.org/web/20201020014318/http://www.spetsialist-mx.ru/Galaksija/Soft/GalaksijaGerbers.rar). Note that since this is a single layer board, you will have to solder over 100 jumpers, and the connector and drill hole locations are not compatible with modern key switches, so you will either have to source older switches or [improvize like I did](https://twitter.com/mejs/status/1311480797669527553)
 - Voja Antonić, Galaksija's designer, released an updated 2 layer PCB. It also includes updated key switch connectors and drill holes, and a new 5nF ceramic capacitor added between -RFSH and GND on Z80A. This solves the problem of modified timings on the CMOS version of Z80A. You can download the [double-layer PCB from Hackaday](https://cdn.hackaday.io/files/6059259228256/Galaksija%20Outputs.zip)
 
+### Parts
+I created a [spreadsheet with all the parts](https://docs.google.com/spreadsheets/d/1QJcyFRXi8k8qUmd-SudMwjSTcvY0Hddc_G902Sn-lK0/edit?usp=sharing) necessary to build a Galaksija, with links and prices. Note: this file is not actively maintain and you should check availability before ordering.
+
 ### [Roms](https://github.com/mejs/galaksija/tree/master/roms)
 There were 3 roms for the original Galaksija
 - 2 x 2732 4KB EPROMs: ROM A (main functins and BASIC) and ROM B (advanced math functions, released in 1984)
