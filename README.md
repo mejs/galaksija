@@ -8,6 +8,10 @@ Galaksija is a Z80A based microcomputer designed in 1983 in Belgrade (Yugoslavia
 
 For more about my Galaksija build project, check my ongoing [Twitter thread](https://twitter.com/mejs/status/1310633747461668869).
 
+### Gerbers
+- Gerbers file of the original single layer board was available at spetsialist-mx.ru. Unfortunately, this website is no longer active, but you can download a rar of the gerbers files from the [Internet Archive](https://web.archive.org/web/20201020014318/http://www.spetsialist-mx.ru/Galaksija/Soft/GalaksijaGerbers.rar). Note that since this is a single layer board, you will have to solder over 100 jumpers, and the connector and drill hole locations are not compatible with modern key switches, so you will either have to source older switches or [improvize like I did](https://twitter.com/mejs/status/1311480797669527553)
+- Voja Antonić, Galaksija's designer, released an updated 2 layer PCB. It also includes updated key switch connectors and drill holes, and a new 5nF ceramic capacitor added between -RFSH and GND on Z80A. This solves the problem of modified timings on the CMOS version of Z80A. You can download the [double-layer PCB from Hackaday](https://cdn.hackaday.io/files/6059259228256/Galaksija%20Outputs.zip)
+
 ### [Roms](https://github.com/mejs/galaksija/tree/master/roms)
 There were 3 roms for the original Galaksija
 - 2 x 2732 4KB EPROMs: ROM A (main functins and BASIC) and ROM B (advanced math functions, released in 1984)
