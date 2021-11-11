@@ -17,7 +17,7 @@ Later on at least two additional roms were released, mainly for use with Galaksi
 
 #### ROM A
 Includes:
-- a copy of the first two pages of the original ROM listing (published as GALA005052). I'm still looking for a complete scan.
+- the listing of the original ROM A version 28 with Voja Antonić's comments, published as GALA005052. Kindly provided by Paolo Gigli.
 - the original Galaksija guide published in Računari u vašoj kući Issue 1, covering ROM A functions. An extra copy is available for printing.
 - ROM A version 28 - original ROM A before ROM B was available
 - ROM A version 29 - updated ROM A with automatic loading of ROM B
