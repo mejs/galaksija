@@ -20,3 +20,9 @@
 
  - [ROM binary](chrgen_lowercase.bin)
  - [1:1 charset](chrgen_lowercase_charset.png)
+
+## Custom/fan version: UPPERCASE with Galaxy logo
+![Preview](CHRGEN_GALAXY_CHARSET_SIMULATED_CRT_PREVIEW.PNG)
+
+ - [ROM binary](CHRGEN_GALAXY.BIN)
+ - [1:1 charset](CHRGEN_GALAXY_CHARSET.PNG)
