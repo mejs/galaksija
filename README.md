@@ -53,12 +53,12 @@ While the character ROM hasn't changed after release, different computer version
 
 Elektronika inženjering and MIPRO featured their respective logos at the Galaksija READY prompt. I haven't been able to confirm what determined which character ROMs got which logo. Most character ROMs available online feature the recognizable Elektronika inženjering logo, but I generated one with MIPRO's logo as well for historical reasons.
 
-| Prompt with logo                       | Source                  | ROM                                                                         | Preview                                                                                                       |
-| :------------------------------------: | :---------------------: | :-------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
-| ![Mipro](/imgs/mipro.png)              | MIPRO                   | [ROM](/roms/Character%20Generator%20ROM/CHRGEN_MIPRO.BIN)                   | [Preview](/roms/Character%20Generator%20ROM/CHRGEN_MIPRO_CHARSET_SIMULATED_CRT_PREVIEW.PNG)                   |
-| ![EI](/imgs/ei.png)                    | Elektronika inženjering | [ROM](/roms/Character%20Generator%20ROM/CHRGEN_ELEKTRONIKA_INZENJERING.BIN) | [Preview](/roms/Character%20Generator%20ROM/CHRGEN_ELEKTRONIKA_INZENJERING_CHARSET_SIMULATED_CRT_PREVIEW.PNG) |
-| ![Fan](/imgs/fan-galaxy.png)           | Fan                     | [ROM](/roms/Character%20Generator%20ROM/CHRGEN_GALAXY.BIN)                  | [Preview](/roms/Character%20Generator%20ROM/CHRGEN_GALAXY_CHARSET_SIMULATED_CRT_PREVIEW.PNG)                  |
-| ![Fan](/imgs/fan-galaxy-lowercase.png) | Fan                     | [ROM](/roms/Character%20Generator%20ROM/chrgen_lowercase.bin)               | [Preview](/roms/Character%20Generator%20ROM/chrgen_lowercase_simulated_crt_preview.png)                       |
+| Prompt with logo                       | Source                  | ROM                                                                         | Preview                                                                                               |
+| :------------------------------------: | :---------------------: | :-------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------: |
+| ![Mipro](/imgs/mipro.png)              | MIPRO                   | [ROM](/roms/Character%20Generator%20ROM/CHRGEN_MIPRO.BIN)                   | [Preview](/roms/Character%20Generator%20ROM/CHRGEN_MIPRO_SIMULATED_CRT_PREVIEW.PNG)                   |
+| ![EI](/imgs/ei.png)                    | Elektronika inženjering | [ROM](/roms/Character%20Generator%20ROM/CHRGEN_ELEKTRONIKA_INZENJERING.BIN) | [Preview](/roms/Character%20Generator%20ROM/CHRGEN_ELEKTRONIKA_INZENJERING_SIMULATED_CRT_PREVIEW.PNG) |
+| ![Fan](/imgs/fan-galaxy.png)           | Fan                     | [ROM](/roms/Character%20Generator%20ROM/CHRGEN_GALAXY.BIN)                  | [Preview](/roms/Character%20Generator%20ROM/CHRGEN_GALAXY_SIMULATED_CRT_PREVIEW.PNG)                  |
+| ![Fan](/imgs/fan-galaxy-lowercase.png) | Fan                     | [ROM](/roms/Character%20Generator%20ROM/chrgen_lowercase.bin)               | [Preview](/roms/Character%20Generator%20ROM/chrgen_lowercase_simulated_crt_preview.png)               |
 
 ### Video
 
