@@ -2,25 +2,25 @@ Galaksija: 1983 Yugoslav 8-bit DIY microcomputer
 =====================================
 ![logo](/imgs/logo.png)
 
-Galaksija is a Z80A based microcomputer designed in 1983 in Belgrade (Yugoslavia, now Serbia) by Voja Antonić. This repo includes roms, programs and tools for working with this computer. 
+Galaksija is a Z80A-based microcomputer designed in 1983 in Belgrade (Yugoslavia, now Serbia) by Voja Antonić. This repo includes ROMs, programs and tools for working with this computer. 
 
 ![Galaksija](/imgs/galaksija.JPG)
 
 For more about my Galaksija build project, check my ongoing [Twitter thread](https://twitter.com/mejs/status/1310633747461668869).
 
 ### Gerbers
-- Gerbers file of the original single layer board was available at spetsialist-mx.ru. Unfortunately, this website is no longer active, but you can download a rar of the gerbers files from the [Internet Archive](https://web.archive.org/web/20201020014318/http://www.spetsialist-mx.ru/Galaksija/Soft/GalaksijaGerbers.rar). Note that since this is a single layer board, you will have to solder over 100 jumpers, and the connector and drill hole locations are not compatible with modern key switches, so you will either have to source older switches or [improvize like I did](https://twitter.com/mejs/status/1311480797669527553)
-- Voja Antonić, Galaksija's designer, released an updated 2 layer PCB. It also includes updated key switch connectors and drill holes, and a new 5nF ceramic capacitor added between -RFSH and GND on Z80A. This solves the problem of modified timings on the CMOS version of Z80A. You can download the [double-layer PCB from Hackaday](https://cdn.hackaday.io/files/6059259228256/Galaksija%20Outputs.zip)
+- Gerbers file of the original single layer board was available at spetsialist-mx.ru. Unfortunately, this website is no longer active, but you can download a rar of the gerbers files from the [Internet Archive](https://web.archive.org/web/20201020014318/http://www.spetsialist-mx.ru/Galaksija/Soft/GalaksijaGerbers.rar). Note that since this is a single layer board, you will have to solder over 100 jumpers, and the connector and drill hole locations are not compatible with modern key switches, so you will either have to source older switches or [improvise like I did](https://twitter.com/mejs/status/1311480797669527553)
+- Voja Antonić, Galaksija's designer, released an updated 2 layer PCB. It also includes updated key switch connectors and drill holes, and a new 5nF ceramic capacitor added between `-RFSH` and `GND` on Z80A. This solves the problem of modified timings on the CMOS version of Z80A. You can download the [double-layer PCB from Hackaday](https://cdn.hackaday.io/files/6059259228256/Galaksija%20Outputs.zip)
 
 ### Parts
-I created a [spreadsheet with all the parts](https://docs.google.com/spreadsheets/d/1QJcyFRXi8k8qUmd-SudMwjSTcvY0Hddc_G902Sn-lK0/edit?usp=sharing) necessary to build a Galaksija, with links and prices. Note: this file is not actively maintain and you should check availability before ordering.
+I created a [spreadsheet with all the parts](https://docs.google.com/spreadsheets/d/1QJcyFRXi8k8qUmd-SudMwjSTcvY0Hddc_G902Sn-lK0/edit?usp=sharing) necessary to build a Galaksija, with links and prices. Note: this file is not actively maintained and you should check availability before ordering.
 
-### [Roms](https://github.com/mejs/galaksija/tree/master/roms)
-There were 3 roms for the original Galaksija
-- 2 x 2732 4KB EPROMs: ROM A (main functins and BASIC) and ROM B (advanced math functions, released in 1984)
-- 1 x 2716 2KB EPROM: character generator rom
+### [ROMs](https://github.com/mejs/galaksija/tree/master/roms)
+There were 3 ROMs for the original Galaksija
+- 2x 2732 4KB EPROMs: ROM A (main functions and BASIC) and ROM B (advanced math functions, released in 1984)
+- 1x 2716 2KB EPROM: character generator ROM
 
-Later on at least two additional roms were released, mainly for use with Galaksija Plus, but still compatible with the original Galaksija: ROM C and ROM D. I haven't been able to find copies of these two roms yet, but I did obtain some documentation, which is included in this repo.
+Later on at least two additional ROMs were released, mainly for use with Galaksija Plus, but still compatible with the original Galaksija: ROM C and ROM D. I haven't been able to find copies of these two ROMs yet, but I did obtain some documentation, included in this repo.
 
 #### ROM A
 Includes:
@@ -46,22 +46,23 @@ Includes
 
 #### Character generator ROM
 While the character ROM hasn't changed after release, different computer versions came with different logos. A number of companies were involved in production and distribution of Galaksija parts, but three companies actively participated in Galaksija branding:
+
 - Elektronika inženjering
-- Mipro
+- MIPRO
 - Zavod za udžbenike i nastavna sredstva
 
-Elektronika inženjering and Mipro featured their respective logos at the Galaksija READY prompt. I haven't been able to confirm what determined which character ROMs got which logo. Most character ROMs available online feature the recognizable Elektronika inženjering logo, but I generated one with Mipro's logo as well for historical reasons.
+Elektronika inženjering and MIPRO featured their respective logos at the Galaksija READY prompt. I haven't been able to confirm what determined which character ROMs got which logo. Most character ROMs available online feature the recognizable Elektronika inženjering logo, but I generated one with MIPRO's logo as well for historical reasons.
 
-![Mipro](/imgs/mipro.png)
+| Prompt with logo                       | Source                  | ROM                                                                         | Preview                                                                                                       |
+| :------------------------------------: | :---------------------: | :-------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
+| ![Mipro](/imgs/mipro.png)              | MIPRO                   | [ROM](/roms/Character%20Generator%20ROM/CHRGEN_MIPRO.BIN)                   | [Preview](/roms/Character%20Generator%20ROM/CHRGEN_MIPRO_CHARSET_SIMULATED_CRT_PREVIEW.PNG)                   |
+| ![EI](/imgs/ei.png))                   | Elektronika inženjering | [ROM](/roms/Character%20Generator%20ROM/CHRGEN_ELEKTRONIKA_INZENJERING.BIN) | [Preview](/roms/Character%20Generator%20ROM/CHRGEN_ELEKTRONIKA_INZENJERING_CHARSET_SIMULATED_CRT_PREVIEW.PNG) |
+| ![Fan](/imgs/fan-galaxy.png)           | Fan                     | [ROM](/roms/Character%20Generator%20ROM/CHRGEN_GALAXY.BIN)                  | [Preview](/roms/Character%20Generator%20ROM/CHRGEN_GALAXY_CHARSET_SIMULATED_CRT_PREVIEW.PNG)                  |
+| ![Fan](/imgs/fan-galaxy-lowercase.png) | Fan                     | [ROM](/roms/Character%20Generator%20ROM/chrgen_lowercase.bin)               | [Preview](/roms/Character%20Generator%20ROM/chrgen_lowercase_simulated_crt_preview.png)                       |
 
-Mipro logo
+### Video
 
-![EI](/imgs/ei.png)
-
-Elektronika inženjering logo
-
-* [Mipro character rom](https://github.com/mejs/galaksija/blob/master/roms/CHRGENMIPRO.BIN)
-* [Elektronika inženjering character rom](https://github.com/mejs/galaksija/blob/master/roms/CHRGENELEKTRONIKAINZENJERING.BIN)
+Galaksija outputs 320 horizontal black-and-white lines 50 times a second: 16000 kHz horizontal / 50 Hz vertical sync rate. This is close to PAL timings but not quite (312.5 lines at 15,625 kHz, 50 interleaved fields per second). This discrepancy generally does not bother analogue TV sets (even NTSC) but not be supported by various adapters from analogue/composite to modern digital standards. Note that the basic non-RF output is analogue black and white video, not "composite" as there is no colour information, colour burst or colour subcarrier.
 
 ### Programs
 
