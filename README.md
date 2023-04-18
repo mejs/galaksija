@@ -16,7 +16,7 @@ For more about my Galaksija build project, check my ongoing [Twitter thread](htt
 I created a [spreadsheet with all the parts](https://docs.google.com/spreadsheets/d/1QJcyFRXi8k8qUmd-SudMwjSTcvY0Hddc_G902Sn-lK0/edit?usp=sharing) necessary to build a Galaksija, with links and prices. Note: this file is not actively maintain and you should check availability before ordering.
 
 ### Instructions
-Instructions for building the Galaksija computer were first published in the January 1984 special edition of Yugoslav popular science magazine Galaksija, titled Računari u vašoj kući (Computers in your home). These instructions are still valid and they are the best resource if you want to build a Galaksija yourself. This translation was published in PoC——GTFO, Volume 2 published by No Starch Press in 2018. This translation is kindly provided by Travis Goodspeed and Aleks Nikolić. [PDF Instructions English Translation](https://github.com/mejs/galaksija/raw/master/galaksija-english-translation.pdf)
+Instructions for building the Galaksija computer were first published in the January 1984 special edition of Yugoslav popular science magazine Galaksija, titled Računari u vašoj kući (Computers in your home). These instructions are still valid and they are the best resource if you want to build a Galaksija yourself. This translation was published in PoC——GTFO, Volume 2 published by No Starch Press in 2018. This translation is kindly provided by Travis Goodspeed and Aleks Nikolić. [PDF Instructions English Translation](https://github.com/mejs/galaksija/raw/master/galaksija-english-translation.pdf).
 
 ### [Roms](https://github.com/mejs/galaksija/tree/master/roms)
 There were 3 roms for the original Galaksija
