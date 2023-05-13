@@ -30,7 +30,7 @@ Includes:
 - the listing of the original ROM A version 28 with Voja Antonić's comments, published as GALA005052. Kindly provided by Paolo Gigli.
 - the original Galaksija guide published in Računari u vašoj kući Issue 1, covering ROM A functions. An extra copy is available for printing.
 - ROM A version 28 - original ROM A before ROM B was available
-- ROM A version 29 - updated ROM A with automatic loading of ROM B
+- ROM A version 29 - updated ROM A with automatic loading of ROM B 
 
 #### ROM B
 Includes:
