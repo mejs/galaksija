@@ -2,14 +2,15 @@ Galaksija: 1983 Yugoslav 8-bit DIY microcomputer
 =====================================
 ![logo](/imgs/logo.png)
 
-Galaksija is a Z80A based microcomputer designed in 1983 in Belgrade (Yugoslavia, now Serbia) by Voja Antonić. This repo includes roms, programs and tools for working with this computer. 
+Galaksija is a Z80A based microcomputer designed in 1983 in Belgrade (Yugoslavia, now Serbia) by Voja Antonić. This repo includes roms, programs and tools for working with this computer. An [expanded FAQ article about the Galaksija is available on my website](https://blog.vladovince.com/galaksija/).
 
 ![Galaksija](/imgs/galaksija.JPG)
 
 For more about my Galaksija build project, check my ongoing [Twitter thread](https://twitter.com/mejs/status/1310633747461668869).
 
 ### Gerbers
-- Gerbers file of the original single layer board was available at spetsialist-mx.ru. Unfortunately, this website is no longer active, but you can download a rar of the gerbers files from the [Internet Archive](https://web.archive.org/web/20201020014318/http://www.spetsialist-mx.ru/Galaksija/Soft/GalaksijaGerbers.rar). Note that since this is a single layer board, you will have to solder over 100 jumpers, and the connector and drill hole locations are not compatible with modern key switches, so you will either have to source older switches or [improvize like I did](https://twitter.com/mejs/status/1311480797669527553)
+- Gerbers file of the original single layer board was available at spetsialist-mx.ru. Unfortunately, this website is no longer active, but you can download a rar of the gerbers files from the [Internet Archive](https://web.archive.org/web/20201020014318/http://www.spetsialist-mx.ru/Galaksija/Soft/GalaksijaGerbers.rar). Note that since this is a single layer board, you will have to solder over 100 jumpers, and the connector and drill hole locations are not compatible with modern key switches, so you will have to source older SMK style switches [like these](https://www.ebay.com/itm/144877940261?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=GGErK-RSRHa&sssrc=2349624&ssuid=lFX_eHIgTnm&var=&widget_ver=artemis&media=COPY)
+
 - Voja Antonić, Galaksija's designer, released an updated 2 layer PCB. It also includes updated key switch connectors and drill holes, and a new 5nF ceramic capacitor added between -RFSH and GND on Z80A. This solves the problem of modified timings on the CMOS version of Z80A. You can download the [double-layer PCB from Hackaday](https://cdn.hackaday.io/files/6059259228256/Galaksija%20Outputs.zip)
 
 ### Parts
@@ -53,7 +54,7 @@ While the character ROM hasn't changed after release, different computer version
 - Mipro
 - Zavod za udžbenike i nastavna sredstva
 
-Elektronika inženjering and Mipro featured their respective logos at the Galaksija READY prompt. I haven't been able to confirm what determined which character ROMs got which logo. Most character ROMs available online feature the recognizable Elektronika inženjering logo, but I generated one with Mipro's logo as well for historical reasons.
+Elektronika inženjering and Mipro featured their respective logos at the Galaksija READY prompt. Per Dejan Ristanović, all the EPROMs sent to Računari u vašoj kući offices to be programmed by Voja Antonić were programmed with the Mipro logo, while the factory made Galaksijas shipped with the Elektronika inženjering logo. Most character ROMs available online feature the recognizable Elektronika inženjering logo, but I generated one with Mipro's logo as well for historical reasons.
 
 ![Mipro](/imgs/mipro.png)
 
