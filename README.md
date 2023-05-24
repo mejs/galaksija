@@ -140,7 +140,6 @@ The original Galaksija instructions in Računari u vašoj kući suggests using p
 * 1 power jack
 * 1 power switch
 * 1 3.5mm jack
-* 1 HDMI port for use with integrated RCA to HDMI adapter
 
 I strongly suggest you measure your Galaksija, especially the keyboard, and make adjustments for I/O ports. Overall dimensions should be compatible with all original PCB designs.
 
