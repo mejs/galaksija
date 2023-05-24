@@ -144,5 +144,5 @@ The original Galaksija instructions in Računari u vašoj kući suggests using p
 
 I strongly suggest you measure your Galaksija, especially the keyboard, and make adjustments for I/O ports. Overall dimensions should be compatible with all original PCB designs.
 
-* [SketchUp file](https://github.com/mejs/galaksija/blob/master/case/Galaksija%20case.stl)
+* [SketchUp file]([https://github.com/mejs/galaksija/blob/master/case/Galaksija%20case.stl](https://github.com/mejs/galaksija/raw/master/case/Galaksija%20case%20v4%202023%20solo.skp))
 * [Additional photos](https://github.com/mejs/galaksija/tree/master/case)
